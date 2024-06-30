@@ -27,7 +27,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/profile/users",
+							"raw": "http://localhost:8080/profile/users/register",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -35,7 +35,8 @@
 							"port": "8080",
 							"path": [
 								"profile",
-								"users"
+								"users",
+								"register"
 							]
 						}
 					},
