@@ -26,6 +26,7 @@ export default function Registration() {
   const [password, setPassword] = useState("");
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
   const [snackSeverity, setSnackSeverity] = useState("info");
   const [snackBarOpen, setSnackBarOpen] = useState(false);
   const [snackBarMessage, setSnackBarMessage] = useState("");
@@ -39,6 +40,7 @@ export default function Registration() {
         password: password,
         firstName: firstname,
         lastName: lastname,
+        email: email,
       };
 
       let response = await register(data);
@@ -118,6 +120,14 @@ export default function Registration() {
                 margin="normal"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+              />
+               <TextField
+                label="Email"
+                variant="outlined"
+                fullWidth
+                margin="normal"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <TextField
                 label="Firstname"

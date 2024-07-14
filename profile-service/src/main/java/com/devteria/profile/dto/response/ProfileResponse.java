@@ -15,8 +15,10 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserResponse {
+public class ProfileResponse {
     String profileId;
+    String userId;
+    String email;
     String username;
     String firstName;
     String lastName;

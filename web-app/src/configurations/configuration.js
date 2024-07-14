@@ -3,5 +3,5 @@ export const CONFIG = {
 };
 
 export const API = {
-  REGISTRATION: "/users/register",
+  REGISTRATION: "/register",
 };

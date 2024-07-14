@@ -24,6 +24,7 @@ public class Profile {
     String profileId;
     // UserId from keycloak
     String userId;
+    String email;
     String username;
     String firstName;
     String lastName;

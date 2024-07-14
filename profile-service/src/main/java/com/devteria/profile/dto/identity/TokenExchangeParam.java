@@ -13,8 +13,8 @@ import lombok.experimental.FieldDefaults;
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class TokenExchangeParam {
-    String grantType;
-    String clientId;
-    String clientSecret;
+    String grant_type;
+    String client_id;
+    String client_secret;
     String scope;
 }
