@@ -1,4 +1,4 @@
-package com.devteria.profile.repository.httpclient;
+package com.devteria.profile.repository;
 
 import com.devteria.profile.entity.Profile;
 import org.springframework.data.mongodb.repository.MongoRepository;

@@ -3,7 +3,7 @@ package com.devteria.profile.service;
 import com.devteria.profile.dto.request.RegistrationRequest;
 import com.devteria.profile.dto.response.ProfileResponse;
 import com.devteria.profile.mapper.ProfileMapper;
-import com.devteria.profile.repository.httpclient.ProfileRepository;
+import com.devteria.profile.repository.ProfileRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
