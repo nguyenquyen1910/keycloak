@@ -8,3 +8,8 @@ spring:
   data:
     mongodb:
       uri: mongodb://root:root@localhost:27017/profile-service?authSource=admin
+
+idp:
+  url: http://localhost:8180
+  client-id: devteria_app
+  client-secret: jJ1gdXhJbeOXMnqe1A1jnZVmc3WKCTx3
