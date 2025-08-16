@@ -1,8 +1,9 @@
 package com.devteria.profile.exception;
 
-import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
+
+import lombok.Getter;
 
 @Getter
 public enum ErrorCode {
@@ -12,6 +13,9 @@ public enum ErrorCode {
     INVALID_PASSWORD(1004, "Password must be at least {min} characters", HttpStatus.BAD_REQUEST),
     UNAUTHENTICATED(1006, "Unauthenticated", HttpStatus.UNAUTHORIZED),
     UNAUTHORIZED(1007, "You do not have permission", HttpStatus.FORBIDDEN),
+    EMAIL_EXISTS(1008, "Email already exists, please use another email", HttpStatus.BAD_REQUEST),
+    USERNAME_EXISTS(1009, "Username already exists, please use another username", HttpStatus.BAD_REQUEST),
+    USERNAME_MISSING(1010, "Username is required", HttpStatus.BAD_REQUEST),
     ;
 
     ErrorCode(int code, String message, HttpStatusCode statusCode) {
